@@ -1,0 +1,16 @@
+C:\Users\arovi\Downloads\TableroAjedrez\TableroAjedrez\bin\Debug\TableroAjedrez.exe.config
+C:\Users\arovi\Downloads\TableroAjedrez\TableroAjedrez\bin\Debug\TableroAjedrez.exe
+C:\Users\arovi\Downloads\TableroAjedrez\TableroAjedrez\bin\Debug\TableroAjedrez.pdb
+C:\Users\arovi\Downloads\TableroAjedrez\TableroAjedrez\obj\Debug\TableroAjedrez.csproj.AssemblyReference.cache
+C:\Users\arovi\Downloads\TableroAjedrez\TableroAjedrez\obj\Debug\MainWindow.g.cs
+C:\Users\arovi\Downloads\TableroAjedrez\TableroAjedrez\obj\Debug\App.g.cs
+C:\Users\arovi\Downloads\TableroAjedrez\TableroAjedrez\obj\Debug\TableroAjedrez_MarkupCompile.cache
+C:\Users\arovi\Downloads\TableroAjedrez\TableroAjedrez\obj\Debug\TableroAjedrez_MarkupCompile.lref
+C:\Users\arovi\Downloads\TableroAjedrez\TableroAjedrez\obj\Debug\App.baml
+C:\Users\arovi\Downloads\TableroAjedrez\TableroAjedrez\obj\Debug\MainWindow.baml
+C:\Users\arovi\Downloads\TableroAjedrez\TableroAjedrez\obj\Debug\TableroAjedrez.g.resources
+C:\Users\arovi\Downloads\TableroAjedrez\TableroAjedrez\obj\Debug\TableroAjedrez.Properties.Resources.resources
+C:\Users\arovi\Downloads\TableroAjedrez\TableroAjedrez\obj\Debug\TableroAjedrez.csproj.GenerateResource.cache
+C:\Users\arovi\Downloads\TableroAjedrez\TableroAjedrez\obj\Debug\TableroAjedrez.csproj.CoreCompileInputs.cache
+C:\Users\arovi\Downloads\TableroAjedrez\TableroAjedrez\obj\Debug\TableroAjedrez.exe
+C:\Users\arovi\Downloads\TableroAjedrez\TableroAjedrez\obj\Debug\TableroAjedrez.pdb

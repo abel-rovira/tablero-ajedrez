@@ -1,0 +1,262 @@
+﻿<Window x:Class="CanvasChessBoard.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CanvasChessBoard"
+        mc:Ignorable="d"
+        Height="800" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None">
+    <Grid MouseDown="Grid_MouseDown">
+        <Border BorderThickness="50" BorderBrush="{StaticResource BoardOutline}">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <!-- Row 0 -->
+                <Grid Grid.Row="0" Grid.Column="0" Background="{StaticResource OddTile}">
+                    <Canvas Style="{StaticResource OppositeCanvas}">
+                        <StackPanel Margin="15 10">
+                            <Path Style="{StaticResource RookHead}" />
+                            <Path Style="{StaticResource RookBody}" />
+                        </StackPanel>
+                    </Canvas>
+                </Grid>
+                <Grid Grid.Row="0" Grid.Column="1" Background="{StaticResource EvenTile}">
+                    <Canvas>
+                        <Path Style="{StaticResource Knight}" />
+                    </Canvas>
+                </Grid>
+                <Grid Grid.Row="0" Grid.Column="2" Background="{StaticResource OddTile}">
+                    <Canvas>
+                        <Path Style="{StaticResource BishopHelmetFront}" />
+                        <Path Style="{StaticResource BishopHelmet}" />
+                    </Canvas>
+                </Grid>
+                <Grid Grid.Row="0" Grid.Column="3" Background="{StaticResource EvenTile}">
+                    <Canvas>
+                        <Path Style="{StaticResource Queen}" />
+                    </Canvas>
+                </Grid>
+                <Grid Grid.Row="0" Grid.Column="4" Background="{StaticResource OddTile}">
+                    <Canvas>
+                        <Path Style="{StaticResource King}" />
+                    </Canvas>
+                </Grid>
+                <Grid Grid.Row="0" Grid.Column="5" Background="{StaticResource EvenTile}">
+                    <Canvas>
+                        <Path Style="{StaticResource BishopHelmetFront}" />
+                        <Path Style="{StaticResource BishopHelmet}" />
+                    </Canvas>
+                </Grid>
+                <Grid Grid.Row="0" Grid.Column="6" Background="{StaticResource OddTile}">
+                    <Canvas>
+                        <Path Style="{StaticResource Knight}" />
+                    </Canvas>
+                </Grid>
+                <Grid Grid.Row="0" Grid.Column="7" Background="{StaticResource EvenTile}">
+                    <Canvas Style="{StaticResource OppositeCanvas}">
+                        <StackPanel Margin="15 10">
+                            <Path Style="{StaticResource RookHead}" />
+                            <Path Style="{StaticResource RookBody}" />
+                        </StackPanel>
+                    </Canvas>
+                </Grid>
+
+                <!-- Row 1 -->
+                <Grid Grid.Row="1" Grid.Column="0" Background="{StaticResource EvenTile}">
+                    <Canvas>
+                        <Path Style="{StaticResource Pawn}" />
+                    </Canvas>
+                </Grid>
+                <Grid Grid.Row="1" Grid.Column="1" Background="{StaticResource OddTile}">
+                    <Canvas>
+                        <Path Style="{StaticResource Pawn}" />
+                    </Canvas>
+                </Grid>
+                <Grid Grid.Row="1" Grid.Column="2" Background="{StaticResource EvenTile}">
+                    <Canvas>
+                        <Path Style="{StaticResource Pawn}" />
+                    </Canvas>
+                </Grid>
+                <Grid Grid.Row="1" Grid.Column="3" Background="{StaticResource OddTile}">
+                    <Canvas>
+                        <Path Style="{StaticResource Pawn}" />
+                    </Canvas>
+                </Grid>
+                <Grid Grid.Row="1" Grid.Column="4" Background="{StaticResource EvenTile}">
+                    <Canvas>
+                        <Path Style="{StaticResource Pawn}" />
+                    </Canvas>
+                </Grid>
+                <Grid Grid.Row="1" Grid.Column="5" Background="{StaticResource OddTile}">
+                    <Canvas>
+                        <Path Style="{StaticResource Pawn}" />
+                    </Canvas>
+                </Grid>
+                <Grid Grid.Row="1" Grid.Column="6" Background="{StaticResource EvenTile}">
+                    <Canvas>
+                        <Path Style="{StaticResource Pawn}" />
+                    </Canvas>
+                </Grid>
+                <Grid Grid.Row="1" Grid.Column="7" Background="{StaticResource OddTile}">
+                    <Canvas>
+                        <Path Style="{StaticResource Pawn}" />
+                    </Canvas>
+                </Grid>
+
+                <!-- Row 2 -->
+                <Grid Grid.Row="2" Grid.Column="0" Background="{StaticResource OddTile}"></Grid>
+                <Grid Grid.Row="2" Grid.Column="1" Background="{StaticResource EvenTile}"></Grid>
+                <Grid Grid.Row="2" Grid.Column="2" Background="{StaticResource OddTile}"></Grid>
+                <Grid Grid.Row="2" Grid.Column="3" Background="{StaticResource EvenTile}"></Grid>
+                <Grid Grid.Row="2" Grid.Column="4" Background="{StaticResource OddTile}"></Grid>
+                <Grid Grid.Row="2" Grid.Column="5" Background="{StaticResource EvenTile}"></Grid>
+                <Grid Grid.Row="2" Grid.Column="6" Background="{StaticResource OddTile}"></Grid>
+                <Grid Grid.Row="2" Grid.Column="7" Background="{StaticResource EvenTile}"></Grid>
+
+                <!-- Row 3 -->
+                <Grid Grid.Row="3" Grid.Column="0" Background="{StaticResource EvenTile}"></Grid>
+                <Grid Grid.Row="3" Grid.Column="1" Background="{StaticResource OddTile}"></Grid>
+                <Grid Grid.Row="3" Grid.Column="2" Background="{StaticResource EvenTile}"></Grid>
+                <Grid Grid.Row="3" Grid.Column="3" Background="{StaticResource OddTile}"></Grid>
+                <Grid Grid.Row="3" Grid.Column="4" Background="{StaticResource EvenTile}"></Grid>
+                <Grid Grid.Row="3" Grid.Column="5" Background="{StaticResource OddTile}"></Grid>
+                <Grid Grid.Row="3" Grid.Column="6" Background="{StaticResource EvenTile}"></Grid>
+                <Grid Grid.Row="3" Grid.Column="7" Background="{StaticResource OddTile}"></Grid>
+
+                <!-- Row 4 -->
+                <Grid Grid.Row="4" Grid.Column="0" Background="{StaticResource OddTile}"></Grid>
+                <Grid Grid.Row="4" Grid.Column="1" Background="{StaticResource EvenTile}"></Grid>
+                <Grid Grid.Row="4" Grid.Column="2" Background="{StaticResource OddTile}"></Grid>
+                <Grid Grid.Row="4" Grid.Column="3" Background="{StaticResource EvenTile}"></Grid>
+                <Grid Grid.Row="4" Grid.Column="4" Background="{StaticResource OddTile}"></Grid>
+                <Grid Grid.Row="4" Grid.Column="5" Background="{StaticResource EvenTile}"></Grid>
+                <Grid Grid.Row="4" Grid.Column="6" Background="{StaticResource OddTile}"></Grid>
+                <Grid Grid.Row="4" Grid.Column="7" Background="{StaticResource EvenTile}"></Grid>
+
+                <!-- Row 5 -->
+                <Grid Grid.Row="5" Grid.Column="0" Background="{StaticResource EvenTile}"></Grid>
+                <Grid Grid.Row="5" Grid.Column="1" Background="{StaticResource OddTile}"></Grid>
+                <Grid Grid.Row="5" Grid.Column="2" Background="{StaticResource EvenTile}"></Grid>
+                <Grid Grid.Row="5" Grid.Column="3" Background="{StaticResource OddTile}"></Grid>
+                <Grid Grid.Row="5" Grid.Column="4" Background="{StaticResource EvenTile}"></Grid>
+                <Grid Grid.Row="5" Grid.Column="5" Background="{StaticResource OddTile}"></Grid>
+                <Grid Grid.Row="5" Grid.Column="6" Background="{StaticResource EvenTile}"></Grid>
+                <Grid Grid.Row="5" Grid.Column="7" Background="{StaticResource OddTile}"></Grid>
+
+                <!-- Row 6 -->
+                <Grid Grid.Row="6" Grid.Column="0" Background="{StaticResource OddTile}">
+                    <Canvas Style="{StaticResource OppositeCanvas}">
+                        <Path Style="{StaticResource Pawn}" />
+                    </Canvas>
+                </Grid>
+                <Grid Grid.Row="6" Grid.Column="1" Background="{StaticResource EvenTile}">
+                    <Canvas Style="{StaticResource OppositeCanvas}">
+                        <Path Style="{StaticResource Pawn}" />
+                    </Canvas>
+                </Grid>
+                <Grid Grid.Row="6" Grid.Column="2" Background="{StaticResource OddTile}">
+                    <Canvas Style="{StaticResource OppositeCanvas}">
+                        <Path Style="{StaticResource Pawn}" />
+                    </Canvas>
+                </Grid>
+                <Grid Grid.Row="6" Grid.Column="3" Background="{StaticResource EvenTile}">
+                    <Canvas Style="{StaticResource OppositeCanvas}">
+                        <Path Style="{StaticResource Pawn}" />
+                    </Canvas>
+                </Grid>
+                <Grid Grid.Row="6" Grid.Column="4" Background="{StaticResource OddTile}">
+                    <Canvas Style="{StaticResource OppositeCanvas}">
+                        <Path Style="{StaticResource Pawn}" />
+                    </Canvas>
+                </Grid>
+                <Grid Grid.Row="6" Grid.Column="5" Background="{StaticResource EvenTile}">
+                    <Canvas Style="{StaticResource OppositeCanvas}">
+                        <Path Style="{StaticResource Pawn}" />
+                    </Canvas>
+                </Grid>
+                <Grid Grid.Row="6" Grid.Column="6" Background="{StaticResource OddTile}">
+                    <Canvas Style="{StaticResource OppositeCanvas}">
+                        <Path Style="{StaticResource Pawn}" />
+                    </Canvas>
+                </Grid>
+                <Grid Grid.Row="6" Grid.Column="7" Background="{StaticResource EvenTile}">
+                    <Canvas Style="{StaticResource OppositeCanvas}">
+                        <Path Style="{StaticResource Pawn}" />
+                    </Canvas>
+                </Grid>
+
+                <!-- Row 7 -->
+                <Grid Grid.Row="7" Grid.Column="0" Background="{StaticResource EvenTile}">
+                    <Canvas>
+                        <StackPanel Margin="20 10">
+                            <Path Style="{StaticResource RookHead}" />
+                            <Path Style="{StaticResource RookBody}" />
+                        </StackPanel>
+                    </Canvas>
+                </Grid>
+                <Grid Grid.Row="7" Grid.Column="1" Background="{StaticResource OddTile}">
+                    <Canvas Style="{StaticResource OppositeKnight}">
+                        <StackPanel>
+                            <Path Style="{StaticResource Knight}" />
+                        </StackPanel>
+                    </Canvas>
+                </Grid>
+                <Grid Grid.Row="7" Grid.Column="2" Background="{StaticResource EvenTile}">
+                    <Canvas Style="{StaticResource OppositeBishop}">
+                        <Path Style="{StaticResource BishopHelmetFront}" />
+                        <Path Style="{StaticResource BishopHelmet}" />
+                    </Canvas>
+                </Grid>
+                <Grid Grid.Row="7" Grid.Column="3" Background="{StaticResource OddTile}">
+                    <Canvas Style="{StaticResource OppositeQueen}">
+                        <Path Style="{StaticResource Queen}" />
+                    </Canvas>
+                </Grid>
+                <Grid Grid.Row="7" Grid.Column="4" Background="{StaticResource EvenTile}">
+                    <Canvas Style="{StaticResource OppositeKing}">
+                        <Path Style="{StaticResource King}" />
+                    </Canvas>
+                </Grid>
+                <Grid Grid.Row="7" Grid.Column="5" Background="{StaticResource OddTile}">
+                    <Canvas Style="{StaticResource OppositeBishop}">
+                        <Path Style="{StaticResource BishopHelmetFront}" />
+                        <Path Style="{StaticResource BishopHelmet}" />
+                    </Canvas>
+                </Grid>
+                <Grid Grid.Row="7" Grid.Column="6" Background="{StaticResource EvenTile}">
+                    <Canvas Style="{StaticResource OppositeKnight}">
+                        <StackPanel>
+                            <Path Style="{StaticResource Knight}" />
+                        </StackPanel>
+                    </Canvas>
+                </Grid>
+                <Grid Grid.Row="7" Grid.Column="7" Background="{StaticResource OddTile}">
+                    <Canvas>
+                        <StackPanel Margin="20 10">
+                            <Path Style="{StaticResource RookHead}" />
+                            <Path Style="{StaticResource RookBody}" />
+                        </StackPanel>
+                    </Canvas>
+                </Grid>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>
