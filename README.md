@@ -88,5 +88,5 @@ dotnet build .\TableroAjedrez.sln --configfile .\NuGet.Config
 ## Vista previa
 
 <div align="center">
-  <img width="875" height="872" alt="image" src="https://github.com/user-attachments/assets/265e5f50-8de5-4690-b809-87a38bec4b7a" />
+  <img width="875" height="872" alt="image" src="https://github.com/user-attachments/assets/878e968e-ce05-4224-a798-1fb56ef30c7c" />
 </div>
