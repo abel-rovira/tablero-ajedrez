@@ -1,0 +1,32 @@
+# Build outputs
+bin/
+obj/
+Debug/
+Release/
+x64/
+x86/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# .NET
+artifacts/
+TestResults/
+.appdata/
+.dotnet-home/
+.nuget/
+*.nupkg
+*.snupkg
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Logs and temporary files
+*.log
+*.tmp
+*.cache

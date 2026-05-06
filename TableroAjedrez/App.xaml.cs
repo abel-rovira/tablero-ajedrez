@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace CanvasChessBoard
+namespace TableroAjedrez
 {
     /// <summary>
     /// Interaction logic for App.xaml
@@ -15,3 +15,4 @@ namespace CanvasChessBoard
     {
     }
 }
+

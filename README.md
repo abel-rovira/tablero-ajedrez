@@ -1,50 +1,88 @@
-# Tablero de Ajedrez — WPF + XAML
+# Tablero de Ajedrez - WPF + C#
 
-Un proyecto sencillo en **WPF** que genera un tablero de ajedrez utilizando **XAML** y **C#**. Ideal para aprender diseño de interfaces modernas en Windows, manejo de `Grid`, estilos, binding básico y estructura visual en aplicaciones de escritorio.
+Aplicacion de escritorio en **WPF** y **C#** para jugar una partida de ajedrez local. Mantiene el estilo visual del tablero original, con piezas dibujadas mediante recursos XAML, y anade logica de juego para que el tablero sea funcional.
 
-## Características
+## Caracteristicas
 
-- Interfaz creada completamente con **XAML**
-- Tablero 8×8 generado mediante `Grid` y estilos
-- Diseño limpio y minimalista
-- Código fácil de entender y modificar
-- Proyecto perfecto para practicar WPF
+- Tablero 8x8 con estilo visual clasico en rojo y crema.
+- Piezas dibujadas con `Path` y recursos XAML.
+- Movimiento de piezas por clic.
+- Validacion de movimientos legales.
+- Turnos de blancas y negras.
+- Capturas normales.
+- Jaque, jaque mate y tablas por ahogado.
+- Enroque corto y largo.
+- Captura al paso.
+- Promocion automatica a dama.
+- Pantalla central al terminar la partida con:
+  - `Nueva partida`
+  - `Salir`
 
-## Tecnologías utilizadas
+## Tecnologias utilizadas
 
 - **C#**
 - **WPF (Windows Presentation Foundation)**
 - **XAML**
-- **.NET Desktop Runtime 9**
+- **.NET 10 Windows**
 
 ## Estructura del proyecto
 
-```
+```text
 TableroAjedrez/
- ├── App.xaml
- ├── App.xaml.cs
- ├── MainWindow.xaml
- ├── MainWindow.xaml.cs
- ├── TableroAjedrez.sln
- └── README.md
+|-- App.xaml
+|-- App.xaml.cs
+|-- VentanaPrincipal.xaml
+|-- VentanaPrincipal.xaml.cs
+|-- PartidaAjedrez.cs
+|-- Pieza.cs
+|-- Movimiento.cs
+|-- Posicion.cs
+|-- Direccion.cs
+|-- ColorPieza.cs
+|-- TipoPieza.cs
+|-- ResultadoPartida.cs
+`-- TableroAjedrez.csproj
 ```
 
-## Cómo ejecutar el proyecto
+En la raiz del repositorio:
 
-1. Instala **.NET Desktop Runtime 9**  
-   (necesario para ejecutar apps WPF)
-
-2. Clona el repositorio:
-
-```sh
-git clone https://github.com/abel-rovira/tablero-ajedrez
+```text
+TableroAjedrez.sln
+README.md
+AGENTS.md
+.gitignore
+NuGet.Config
 ```
 
-3. Abre la solución en Visual Studio  
-   o ejecuta:
+## Como ejecutar el proyecto
 
-```sh
-dotnet run
+Desde PowerShell:
+
+```powershell
+cd C:\Users\Usuario\Documents\tablero-ajedrez
+dotnet run --project .\TableroAjedrez\TableroAjedrez.csproj
+```
+
+Tambien puedes abrir la solucion en Visual Studio:
+
+```text
+C:\Users\Usuario\Documents\tablero-ajedrez\TableroAjedrez.sln
+```
+
+Y pulsar **F5** o **Iniciar**.
+
+## Como jugar
+
+1. Haz clic en una pieza del color que tiene el turno.
+2. Las casillas disponibles se resaltan.
+3. Haz clic en una casilla resaltada para mover.
+4. Si la partida termina, apareceran las opciones `Nueva partida` y `Salir` en el centro.
+
+## Compilar
+
+```powershell
+cd C:\Users\Usuario\Documents\tablero-ajedrez
+dotnet build .\TableroAjedrez.sln --configfile .\NuGet.Config
 ```
 
 ## Vista previa
@@ -52,4 +90,3 @@ dotnet run
 <div align="center">
   <img width="875" height="872" alt="image" src="https://github.com/user-attachments/assets/265e5f50-8de5-4690-b809-87a38bec4b7a" />
 </div>
-
